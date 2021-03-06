@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container"> 
+        <!-- header -->
+        <header class="header">
+            <div class="responsive-menu">
+                <label for="switch" class="menu-button">
+                    <i class="fas fa-bars"></i>
+                </label> 
+                <input type="checkbox" id="switch" class="menu-button-checkbox"> 
+                <ul class="menu">
+                    <li><a href="#">日本走透透</a></li>
+                    <li><a href="#">吃喝玩樂</a></li>
+                    <li><a href="#">最新情報</a></li>
+                    <li><a href="#">獨門景點</a></li>
+                    <li><a href="#">預約行程</a></li>
+                </ul>
+            </div>
+            <div class="left-header">
+                <div class="header-logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="left-link">
+                    <ul>
+                        <li><a href="#">日本走透透</a></li>
+                        <li><a href="#">吃喝玩樂</a></li>
+                        <li><a href="#">最新情報</a></li>
+                        <li><a href="#">獨門景點</a></li>
+                        <li><a href="#">預約行程</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-header">
+                <div class="right-link">
+                    <div class="open-all-microsoft" onclick="openAllMicrosoft()">
+                        日本地圖 <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown">
+                            <div><h5>九州</h5>
+                                <li><a href="#">福岡</a></li>
+                                <li><a href="#">大分</a></li>
+                                <li><a href="#">宮崎</li>
+                                <li><a href="#">熊本</li>
+                                <li><a href="#">佐賀</li>
+                                <li><a href="#">長崎</li>
+                                <li><a href="#">鹿兒島</li>
+                            </div>
+                            <div><h5>中國</h5>
+                                <li><a href="#">廣島</a></li>
+                                <li><a href="#">鳥取</a></li>
+                                <li><a href="#">島根</a></li>
+                                <li><a href="#">岡山</a></li>
+                                <li><a href="#">山口</a></li>
+                            </div>
+                            <div><h5>近畿</h5>
+                                <li><a href="#">大阪</a></li>
+                                <li><a href="#">兵庫</a></li>
+                                <li><a href="#">京都</a></li>
+                                <li><a href="#">滋賀</a></li>
+                                <li><a href="#">奈良</a></li>
+                                <li><a href="#">和歌山</a></li>
+                                <li><a href="#">三重</a></li>
+                            </div>      
+                            <div><h5>關東</h5>
+                                <li><a href="#">東京</a></li>
+                                <li><a href="#">神奈川</a></li>
+                                <li><a href="#">琦玉</a></li>
+                                <li><a href="#">千葉</a></li>
+                                <li><a href="#">群馬</a></li>
+                            </div>
+                            <div><h5>東北</h5>
+                                <li><a href="#">青森</a></li>
+                                <li><a href="#">秋田</a></li>
+                                <li><a href="#">岩手</a></li>
+                                <li><a href="#">宮城</a></li>
+                                <li><a href="#">山形</a></li>
+                                <li><a href="#">福島</a></li>
+                            </div>   
+                            <div class="map">
+                                <a href="#">檢視網站地圖 <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>                       
+                    <ul>
+                        <li class="search"><span>搜尋</span> <i class="fas fa-search"></i></li>
+                        <li><span>購物車</span> <i class="fas fa-cart-plus"></i></li>
+                        <li><span>登入</span> <i class="fas fa-user-circle"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="搜尋Microsoft.com">
+                <button class="cancel-search" value="取消">取消</button>
+            </div>
+            
+        </header>    
+
+        <!-- main -->
+        <main>      
+            <div class="wrapper">
+                
+                <div class="btn" id="next"><i class="fas fa-chevron-circle-left" id="goback-button"></i></div> 
+
+                <div class="slide-container">
+                    <div class="slide-image">
+                        <img src="img/haru.jpg" alt="">
+                    </div>
+
+                    <div class="slide-image">
+                        <img src="img/natsu.jpg" alt="">
+                    </div>
+
+                    <div class="slide-image">
+                        <img src="img/slide1.jpg" alt="">
+                    </div>
+                    
+                    <div class="slide-image">
+                        <img src="img/slide2.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="btn" id="prev"><i class="fas fa-chevron-circle-right" id="gonext-button"></i></div> 
+
+                <div class="option">
+                    <div class="navigation-dots">
+                            
+                    </div>
+                    <div class="auto-change-image" onclick="changeButtonForm()">
+                        <i class="fas fa-pause"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="kind-of-product">
+                <div class="product-items">
+                    <a href="#">
+                        <i class="fas fa-plane"></i>
+                        <h4>選擇您的班機</h4>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#">
+                        <i class="fas fa-hotel"></i>
+                        <h4>選擇您的旅館</h4>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>選購您的行程</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="product-features">
+                <div class="features-introduce">
+                    <img src="img/spot1.jpg" alt="">
+                    <div class="introduce-text">
+                        <h4>心齋橋</h4>
+                        <p>心齋橋，位於大阪市中心，同時也是一處購物中心的聚集地區。在這裡，您可以找到各種大小知名品牌的店鋪（包括：宣稱是全世界最大的 Puma 店面），或是其他像是銷售陶器、二手娃娃或各種服飾的獨特商店。</p>
+                        <a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="features-introduce">
+                    <img src="img/spot2.jpg" alt="">
+                    <div class="introduce-text">
+                        <h4>松本城</h4>
+                        <p>松本城，在日本佔有重要的歷史地位，因為黑色的外觀，所以當地居民有時稱它為「烏城」。 </p>
+                        <a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="features-introduce">
+                    <img src="img/spot3.jpg" alt="">
+                    <div class="introduce-text">
+                        <h4>沖縄美ら海水族館</h4>
+                        <p>美麗海水族館 - 名稱中的「美ら」（發音chura），是沖繩的地方方言，代表「美麗的」意思。水族館，是沖繩海洋萬博公園的一部分，直到 2005 年都還是全世界最大的水族館。</p>
+                        <a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="features-introduce">
+                    <img src="img/spot4.jpg" alt="">
+                    <div class="introduce-text">
+                        <h4>清水寺</h4>
+                        <p>清水寺，是來訪京都必訪的景點之一，而且這裡也被 UNESO 指定為世界遺產。以「清水的舞台」著稱。抬頭仰望就會看到清水寺矗立在山景之中。這裡也是秋天著名的賞楓地點。</p>
+                        <a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="onedrive-service">
+                <div class="using-for-onedrive">
+                    <h3>料理の旨さ</h3>
+                    <p>注目のグルメ記事</p>
+                </div>
+            </div>
+            <div class="for-business">
+                <h2>運用於商務</h2>
+                <div class="business-features">
+                    <img src="img/food1.jpg" alt="">
+                    <div class="business-features-text">
+                        <h4>中國料理 古月 池之端本店</h4>
+                        <p>根津 / 中華料理店</p>
+                        <p><a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="business-features">
+                    <img src="img/food2.jpg" alt="">
+                    <div class="business-features-text">
+                        <h4>でんのしおり 表參道</h4>
+                        <p>表參道/青山 / 居酒屋</p>
+                        <a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="business-features">
+                    <img src="img/food3.jpg" alt="">
+                    <div class="business-features-text">
+                        <h4>壽司・和風料理　米八</h4>
+                        <p>長岡 / 壽司</p>
+                        <a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="business-features">
+                    <img src="img/food4.jpg" alt="">
+                    <div class="business-features-text">
+                        <h4>豚肉創作料理 やまと橫濱ランドマーク店</h4>
+                        <p>港未來 / 居酒屋</p>
+                        <a href="#">深入了解 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="subscibe">
+                    關注我們<a href="#"><i class="fab fa-facebook-square" id="facebook-link"></a></i><a href="#"><i class="fab fa-youtube-square" id="youtube-link"></i></a>
+                </div>
+            </div>
+        </main> 
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <!-- <div class="footer-menu">
+                    <ul>
+                        <h5>最新動向</h5>
+                        <li><a href="#">Microsoft 365</a></li>
+                        <li><a href="#">Surface Go</a></li>
+                        <li><a href="#">Surface Book2</a></li>
+                        <li><a href="#">Surface Pro</a></li>
+                        <li><a href="#">Window10 應用程式</a></li>
+                    </ul>
+                    <ul>
+                        <h5>Microsoft Store</h5>
+                        <li><a href="#">帳戶設定檔</a></li>
+                        <li><a href="#">下載中心</a></li>
+                        <li><a href="#">支援</a></li>
+                        <li><a href="#">退貨/退款</a></li>
+                        <li><a href="#">訂單追蹤</a></li>
+                    </ul>
+                    <ul>
+                        <h5>教育</h5>
+                        <li><a href="#">Microsoft 在教育領域的應用</a></li>
+                        <li><a href="#">學生適用的 Office</a></li>
+                        <li><a href="#">學校適用的 Office 365</a></li>
+                        <li><a href="#">Microsoft Azure 在教育領域的應用</a></li>
+                    </ul>
+                    <ul>
+                        <h5>企業</h5>
+                        <li><a href="#">Azure</a></li>
+                        <li><a href="#">AppSource</a></li>
+                        <li><a href="#">汽車</a></li>
+                        <li><a href="#">政府機構</a></li>
+                        <li><a href="#">療保健</a></li>
+                        <li><a href="#">製造</a></li>
+                        <li><a href="#">金融服務</a></li>
+                    </ul>
+                    <ul>
+                        <h5>開發人員</h5>
+                        <li><a href="#">Microsoft Visual Studio</a></li>
+                        <li><a href="#">Windows 開發人員中心</a></li>
+                        <li><a href="#">開發人員中心</a></li>
+                        <li><a href="#">Microsoft 開發人員計畫</a></li>
+                        <li><a href="#">Channel 9</a></li>
+                    </ul>
+                    <ul>
+                        <h5>公司</h5>
+                        <li><a href="#">人才招募</a></li>
+                        <li><a href="#">公司新聞</a></li>
+                        <li><a href="#">Microsoft 隱私權</a></li>
+                        <li><a href="#">投資者</a></li>
+                        <li><a href="#">安全性</a></li>
+                    </ul>
+                </div> -->
+                <div class="bottom-bar">
+                    <div class="language">
+                        <a href="#"><i class="fas fa-globe-americas"></i> 中文(台灣)</a> 
+                    </div>
+                    <div class="bottom-link">
+                        <ul>
+                            <li><a href="#">連絡我們</a></li>
+                            <li><a href="#">登錄</a></li>
+                            <li><a href="#">公司簡介</a></li>
+                            <li><a href="#">公司夥伴</a></li>
+                            <li><a href="#">隱私權和保護政策</a></li>                       
+                            <li><a href="#">使用規章</a></li>                       
+                            <li>© Japanshoukai 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+ 
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/all.js"></script>
+    
+</body>
+</html>
